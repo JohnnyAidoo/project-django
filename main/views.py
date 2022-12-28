@@ -9,12 +9,5 @@ class PostViewset(viewsets.ModelViewSet):
     serializer_class = PostsSerializer
     queryset = Posts.objects.all()
 
-class RegisterViewset(generics.CreateAPIView):
-    serializer_class = UserSerializer
-    queryset = Users.objects.all()
-    def post(self, request, *args, **kwargs):
-        serializer = self.get_serializer(data = request.data)
-        serializer.is_valid()
-        self.perform_create(serializer)
-        return Response(serializer.data)
+
     
