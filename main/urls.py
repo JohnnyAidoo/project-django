@@ -1,18 +1,16 @@
 from django.urls import path
 from rest_framework.routers import DefaultRouter
 from . import views
-from .views import RegisterAPI
 from django.urls import path
-from knox import views as knox_views
-from .views import LoginAPI
 from django.urls import path
+from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
+
+
 
 urlpatterns = [
-    path('register/', RegisterAPI.as_view(), name='register'),
-    path('login/', LoginAPI.as_view(), name='login'),
-    path('logout/', knox_views.LogoutView.as_view(), name='logout'),
-    path('logoutall/', knox_views.LogoutAllView.as_view(), name='logoutall'),
-]
+    path('login/' , TokenObtainPairView.as_view(), name ="obtain_token"),
+    path("token/refresh/", TokenRefreshView.as_view(), name="refresh_token"),
+    ]
 
 
 router = DefaultRouter()
