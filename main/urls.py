@@ -16,5 +16,6 @@ urlpatterns = [
 router = DefaultRouter()
 router.register(r'post',views.PostViewset, basename='post')
 router.register(r'users', views.UserViewset, basename='users')
+router.register(r'register', views.RegisterViewset, basename='register')
 
 urlpatterns += router.urls
