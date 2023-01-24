@@ -8,4 +8,4 @@ class Posts(models.Model):
     postPrice = models.IntegerField()
     postDescription = models.CharField(max_length=1000000,default='NO DESCRIPTION ADDED', blank=False)
     postCategory = models.CharField(max_length=200,default='others')
-
+    uid = models.IntegerField()
