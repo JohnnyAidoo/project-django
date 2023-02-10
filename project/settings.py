@@ -89,11 +89,11 @@ WSGI_APPLICATION = 'project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'second sell db', 
-        'USER': 'second_sell_db_user',
-        'PASSWORD': 'xQZSrmhM3UQhbPzOam3f8sGUyfn26Cbw',
-        'HOST': 'dpg-cfi6mrkgqg40klm3gef0-a', 
-        'PORT': '5432',
+        'NAME': 'railway', 
+        'USER': 'postgres',
+        'PASSWORD': 'Xi82LeumqaTj4TnwAMB7',
+        'HOST': 'containers-us-west-156.railway.app', 
+        'PORT': '5928',
     }
 }
 
