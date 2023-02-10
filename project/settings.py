@@ -98,8 +98,8 @@ WSGI_APPLICATION = 'project.wsgi.application'
 #}
 
 import dj_database_url
-DATABASE ={
-    'default' : dj_database_url.parse('postgres://second_sell_db_user:xQZSrmhM3UQhbPzOam3f8sGUyfn26Cbw@dpg-cfi6mrkgqg40klm3gef0-a.oregon-postgres.render.com/second_sell_dbj')
+DATABASES ={
+    'default' : dj_database_url.parse('postgres://second_sell_db_z3h1_user:7JvLbRa33Nt13wwBf0DplQ37ugB5Z1ie@dpg-cfj0usta49903fgkf7rg-a.oregon-postgres.render.com/second_sell_db_z3h1')
 }
 
 
