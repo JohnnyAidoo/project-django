@@ -86,15 +86,20 @@ WSGI_APPLICATION = 'project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'railway', 
-        'USER': 'postgres',
-        'PASSWORD': 'Xi82LeumqaTj4TnwAMB7',
-        'HOST': 'containers-us-west-156.railway.app', 
-        'PORT': '5928',
-    }
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+ #       'NAME': 'railway', 
+  #      'USER': 'postgres',
+   #     'PASSWORD': 'Xi82LeumqaTj4TnwAMB7',
+    #    'HOST': 'containers-us-west-156.railway.app', 
+     #   'PORT': '5928',
+    #}
+#}
+
+import dj_database_url
+DATABASE ={
+    'default' : dj_database_url.parse('postgres://second_sell_db_user:xQZSrmhM3UQhbPzOam3f8sGUyfn26Cbw@dpg-cfi6mrkgqg40klm3gef0-a.oregon-postgres.render.com/second_sell_db')
 }
 
 
