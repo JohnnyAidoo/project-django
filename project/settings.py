@@ -152,3 +152,10 @@ CORS_ORIGIN_ALLOW_ALL = True
 MEDIA_ROOT=os.path.join(BASE_DIR,"media/")
 MEDIA_URL = '/media/'  # or any prefix you choose
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'djpaffvsj',
+    'API_KEY': '251668964498143',
+    'API_SECRET': '-kP4CJOOxsZwlm_IZ-EZuTBl79s',
+    'API_PROXY': 'CLOUDINARY_URL=cloudinary://251668964498143:-kP4CJOOxsZwlm_IZ-EZuTBl79s@djpaffvsj'
+}
